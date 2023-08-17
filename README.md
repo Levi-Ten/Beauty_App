@@ -7,6 +7,8 @@ it is not allowed to delete files from this outline
 2 - create a new branch with your git username.
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository
 
+!!! It is categorically forbidden to deploy on the master or main branch !!!
+
 3 - the structure of folders and files
 
  - src/
