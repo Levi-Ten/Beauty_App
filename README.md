@@ -36,23 +36,23 @@ https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/propos
 
 # Contents of the files
 
-Api.js - in it the context for the api is connected and useMap
-ApiContext.js - connecting to api with fetch or axios
-ApiUrl.js - api link
+-Api.js - in it the context for the api is connected and useMap
+-ApiContext.js - connecting to api with fetch or axios
+-ApiUrl.js - api link
 
-App.js - is connected the home page wrapped in the context 
-useColor.js - checking if there are colors
-useMap.js - displaying the data from the array with map
-useRating.js - checking if there are rating
+-App.js - is connected the home page wrapped in the context 
+-useColor.js - checking if there are colors
+-useMap.js - displaying the data from the array with map
+-useRating.js - checking if there are rating
 
-BrandCard.js - the structure of an information block
-ColorsBlock.js - the structure of a color block
+-BrandCard.js - the structure of an information block
+-ColorsBlock.js - the structure of a color block
 
-Home.js - inclusion of Api function
+-Home.js - inclusion of Api function
 
-index.css - global styles
-brandCard.module.css - styles of an information card
-rating.module.css - styles for rating
+-index.css - global styles
+-brandCard.module.css - styles of an information card
+-rating.module.css - styles for rating
 
 # IMPORTANT push the results to git incrementally, on steps. DO NOT wait for completion.
 # the api link http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline
