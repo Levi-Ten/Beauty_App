@@ -4,8 +4,9 @@ import ApiContext from "../api/ApiContext";
 function App() {
   return (
     <div className="App">
-      <Api/>
-      <ApiContext/>
+      <ApiContext>
+        <Api/>
+      </ApiContext>
     </div>
   );
 }

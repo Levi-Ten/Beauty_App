@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { LINK } from './apiUrl'
 
-const MyApiContext = createContext()
+export const MyApiContext = createContext()
 
 function ApiContext(props) {
 const [data, setData] = useState([])
@@ -21,9 +21,10 @@ console.log(data)
     }
       }, []);
   // }
+  const values = { data } 
   return (
     <div>
-      <MyApiContext.Provider value=''>{props.children}</MyApiContext.Provider>
+      <MyApiContext.Provider value={values}>{props.children}</MyApiContext.Provider>
     </div>
   )
 }
