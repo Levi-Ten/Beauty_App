@@ -5,7 +5,6 @@ export const MyApiContext = createContext()
 
 function ApiContext(props) {
 const [data, setData] = useState([])
-// console.log(data)
     useEffect( () => {
       try {
       const context = async () => {
