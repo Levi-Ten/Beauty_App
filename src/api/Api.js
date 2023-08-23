@@ -5,9 +5,9 @@ function Api() {
  const [getData] = useMap()
 
   return (
-    <div>
+    <>
       {getData}
-    </div>
+    </>
   )
 }
 

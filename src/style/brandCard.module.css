@@ -1,3 +1,41 @@
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 80%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 0 20px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 7px 2px  rgb(188, 184, 187);
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+.changeImage {
+    width: 50%;
+}
+.image {
+    width: 300px;
+    margin: 0 auto;
+}
+.brand {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 500;
+}
+.title {
+    font-weight: 500;
+}
+.wraptprtg {
+    display: flex;
+    height: 25px;
+    align-items: center;   
+    gap: 10px; 
+}
 .rating {
     display: inline-block;
     position: relative;
@@ -18,8 +56,30 @@ font-size: 18px;
     overflow: hidden;
 }
 .ratingInner:before {
-    color: red;
+    color: rgb(207, 128, 79);
 }
 .ratingOuter::before {
-    color: black;
+    color: rgb(199, 199, 205);
+}
+.noReviewText {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+}
+.price {
+    font-size: 25px;
+    font-weight: 600;
+}
+.descrTitle {
+    text-align: center;
+    margin: 5px 0;
+}
+.line {
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    margin: 0 auto;
+}
+.descr {
+    font-size: 18px;
 }

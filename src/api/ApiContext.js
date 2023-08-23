@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { LINK } from './apiUrl'
+import brandCard from '../style/brandCard.module.css'
 
 export const MyApiContext = createContext()
 
@@ -21,7 +22,7 @@ const [data, setData] = useState([])
       }, []);
   const values = { data } 
   return (
-    <div>
+    <div className={brandCard.container}>
       <MyApiContext.Provider value={values}>{props.children}</MyApiContext.Provider>
     </div>
   )

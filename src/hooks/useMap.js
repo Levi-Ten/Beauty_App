@@ -14,9 +14,7 @@ function useMap() {
   })
   //colors, type
 
-  return (
-    [getData]
-  )
+  return [getData]
 }
 
 export default useMap

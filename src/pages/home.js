@@ -3,9 +3,9 @@ import Api from '../api/Api'
 
 function Home() {
   return (
-    <div>
+    <>
         <Api/>
-    </div>
+    </>
   )
 }
 
