@@ -5,7 +5,7 @@ export const MyApiContext = createContext()
 
 function ApiContext(props) {
 const [data, setData] = useState([])
-console.log(data)
+// console.log(data)
     useEffect( () => {
       try {
       const context = async () => {
@@ -20,7 +20,6 @@ console.log(data)
       console.log('Found Errors')
     }
       }, []);
-  // }
   const values = { data } 
   return (
     <div>

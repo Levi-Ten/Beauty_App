@@ -1,11 +1,12 @@
-import Api from "../api/Api";
 import ApiContext from "../api/ApiContext";
+import Home from "../pages/Home";
 
 function App() {
   return (
     <div className="App">
       <ApiContext>
-        <Api/>
+        <Home/>
+
       </ApiContext>
     </div>
   );
