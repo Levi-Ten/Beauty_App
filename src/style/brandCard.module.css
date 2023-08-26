@@ -83,3 +83,11 @@ font-size: 18px;
 .descr {
     font-size: 18px;
 }
+.color {
+    width: 30px;
+    height: 30px;
+}
+.wrapcolors {
+    height: 50px;
+    border: 1px solid black;
+}

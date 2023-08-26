@@ -1,11 +1,14 @@
 import React from 'react'
 import brandCard from '../style/brandCard.module.css'
 import useRating from '../hooks/useRating'
+import ColorsBlock from './ColorsBlock'
+import useColor from '../hooks/useColor'
 
 
-function BrandCard({ name, img, price, description, brand, rating, colors, type, prodLink, webLink }) {
+function BrandCard({ name, img, price, description, brand, rating, type, prodLink, webLink, nameColor }) {
 
     const [styleRating, ratingProcent] = useRating(rating)
+    const [colorResult] = useColor(ColorsBlock)
     return (
         <div className={brandCard.wrapper}>
             <div className={brandCard.wrap}>
@@ -34,9 +37,11 @@ function BrandCard({ name, img, price, description, brand, rating, colors, type,
                     </div>
                     <hr style={{ width: '100%' }} />
                     <p className={brandCard.price}>{price} $ </p>
-                    <div className={brandCard.wrapcolors}>
-                        <div className={brandCard.color}>{colors}</div>
-                    </div>
+
+                    <div className={brandCard.wrapcolors}>{colorResult}</div>
+
+                    <div className={brandCard.titleColor}>{nameColor}</div>
+
 
                 </div>
 

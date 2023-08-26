@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import useMap from '../hooks/useMap'
+import { MyApiContext } from './ApiContext'
 
 function Api() {
- const [getData] = useMap()
+  const { data } = useContext(MyApiContext)
+
+ const [getData, colors] = useMap(data)
 
   return (
     <>
+    {colors}
       {getData}
     </>
   )
