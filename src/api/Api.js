@@ -9,7 +9,6 @@ function Api() {
 
   return (
     <>
-    {colors}
       {getData}
     </>
   )

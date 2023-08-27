@@ -5,10 +5,10 @@ import ColorsBlock from './ColorsBlock'
 import useColor from '../hooks/useColor'
 
 
-function BrandCard({ name, img, price, description, brand, rating, type, prodLink, webLink, nameColor }) {
+function BrandCard({ name, img, price, description, brand, rating, type, prodLink, webLink, nameColor, colorBlock}) {
 
     const [styleRating, ratingProcent] = useRating(rating)
-    const [colorResult] = useColor(ColorsBlock)
+    const [colorResult] = useColor(colorBlock)
     return (
         <div className={brandCard.wrapper}>
             <div className={brandCard.wrap}>
@@ -40,7 +40,7 @@ function BrandCard({ name, img, price, description, brand, rating, type, prodLin
 
                     <div className={brandCard.wrapcolors}>{colorResult}</div>
 
-                    <div className={brandCard.titleColor}>{nameColor}</div>
+                    {/* <div className={brandCard.titleColor}>{nameColor}</div> */}
 
 
                 </div>
