@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+html, body {
+    width: 99vw;
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+ background-color: #d7dadd;
+ justify-content: center;
+ align-items: center;
+} 

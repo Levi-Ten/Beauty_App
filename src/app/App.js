@@ -1,8 +1,16 @@
 import React from 'react'
+import ApiContext from '../api/ApiContext'
+import Home from '../pages/Home'
+
 
 function App() {
+
   return (
-    <div>App</div>
+    <div>
+      <ApiContext>
+        <Home />
+      </ApiContext>
+    </div>
   )
 }
 
