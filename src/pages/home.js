@@ -4,7 +4,7 @@ import Api from '../api/Api'
 function Home() {
   return (
     <>
-        <Api/>
+      <Api />
     </>
   )
 }

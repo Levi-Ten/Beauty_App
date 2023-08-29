@@ -8,8 +8,8 @@ function useMap() {
 
   const getData = data.map((el, i) => {
     const colors = el.product_colors;
-    const getColors = colors.map( e => {
-      return <ColorsBlock nameColor={e.colour_name} hexV={e.hex_value}/>
+    const getColors = colors.map(e => {
+      return <ColorsBlock nameColor={e.colour_name} hexV={e.hex_value} />
     })
 
     return <BrandCard key={i} name={el.name} img={el.image_link}
