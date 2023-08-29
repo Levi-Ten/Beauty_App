@@ -1,14 +1,13 @@
 import React from 'react'
 import brandCard from '../style/brandCard.module.css'
 import useRating from '../hooks/useRating'
-import ColorsBlock from './ColorsBlock'
 import useColor from '../hooks/useColor'
+import ratingCSS from '../style/rating.module.css'
 
-
-function BrandCard({ name, img, price, description, brand, rating, type, prodLink, webLink, nameColor, colorBlock}) {
+function BrandCard({ name, img, price, description, brand, rating, type, prodLink, webLink, nameColor, getColors }) {
 
     const [styleRating, ratingProcent] = useRating(rating)
-    const [colorResult] = useColor(colorBlock)
+    const [colorResult] = useColor(getColors)
     return (
         <div className={brandCard.wrapper}>
             <div className={brandCard.wrap}>
@@ -26,9 +25,9 @@ function BrandCard({ name, img, price, description, brand, rating, type, prodLin
                     </h1>
                     <div className={brandCard.wraptprtg}>
                         <div className={brandCard.type}>{type}</div>
-                        <div className={brandCard.rating} >
-                            <div className={brandCard.ratingOuter} style={{ width: ratingProcent }}></div>
-                            <div className={brandCard.ratingInner} style={{ width: ratingProcent }}></div>
+                        <div className={ratingCSS.rating} >
+                            <div className={ratingCSS.ratingOuter} style={{ width: ratingProcent }}></div>
+                            <div className={ratingCSS.ratingInner} style={{ width: ratingProcent }}></div>
                         </div>
                         <div><p>{rating}</p></div>
                         <div className={brandCard.noReview} style={styleRating}>
@@ -37,14 +36,8 @@ function BrandCard({ name, img, price, description, brand, rating, type, prodLin
                     </div>
                     <hr style={{ width: '100%' }} />
                     <p className={brandCard.price}>{price} $ </p>
-
                     <div className={brandCard.wrapcolors}>{colorResult}</div>
-
-                    {/* <div className={brandCard.titleColor}>{nameColor}</div> */}
-
-
                 </div>
-
             </div>
             <div className={brandCard.wrapDescr}>
                 <h3 className={brandCard.descrTitle}>Description</h3>

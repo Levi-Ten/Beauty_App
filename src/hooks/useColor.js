@@ -1,8 +1,8 @@
 
-function useColor(colorBlock) {
-  const colorResult = (colorBlock.length === 0)? <div>No colors</div> : colorBlock;
-  console.log(colorResult);
+function useColor(getColors) {
+  const colorResult = (getColors.length === 0) ? <div>no colors available</div> : getColors;
+
   return [colorResult]
 }
 
-export default useColor
+export default useColor 

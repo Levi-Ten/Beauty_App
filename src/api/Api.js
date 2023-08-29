@@ -4,8 +4,7 @@ import { MyApiContext } from './ApiContext'
 
 function Api() {
   const { data } = useContext(MyApiContext)
-
- const [getData, colors] = useMap(data)
+  const [getData] = useMap(data)
 
   return (
     <>
