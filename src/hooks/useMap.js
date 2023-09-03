@@ -1,22 +1,20 @@
 import React, { useContext } from 'react'
 import { BeautyshopContext } from '../api/ApiContext'
+import BrandCard from '../layouts/BrandCard'
 
 function useMap() {
 
-// const {product} = useContext(BeautyshopContext)
+  const { datas } = useContext(BeautyshopContext)
 
-// const card = product.data
+  const alldata = datas?.map((data, data_id) => {
 
+    return <BrandCard image={data.image_link} website={data.website_link} productsite={data.product_link} brand={data.brand} name={data.name}
+      type={data.product_type} rate={data.rating} 
+      price={data.price} description={data.description} />
+  }) 
 
-
-// const productcard = card.map
-
-
-  return (
-    <div>
-
-    </div>
-  )
+  return [alldata] 
+  
 }
 
 export default useMap

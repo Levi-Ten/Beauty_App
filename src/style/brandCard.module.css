@@ -87,3 +87,17 @@ h3 {
     font-weight: 400;
     line-height: 1.5rem;
 }
+
+@media screen and (max-width: 995px) {
+    .product_basic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_type {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
