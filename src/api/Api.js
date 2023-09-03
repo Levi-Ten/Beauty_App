@@ -4,7 +4,7 @@ import axios from 'axios'
 import { BeautyshopContext } from './ApiContext'
 import useMap from '../hooks/useMap'
 import useColor from '../hooks/useColor'
-// import useColor from '../hooks/useColor'
+
 
 function Api() {
 

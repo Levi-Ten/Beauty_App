@@ -11,23 +11,29 @@ function useColor() {
   //     return <ColorsBlock palete={detail.product_colors}  />
   //   })
 
-  // const colors = datas?.map((detail, id) => {
 
-  // const newdatas = detail.props
-  // const newdata = newdatas?.map((data, id) => {
-  //     return <ColorsBlock palete={data.hex_value}  />
+  // const newdata = datas?.map((data, id) => {
+  //   const allcolors = data.product_colors
+  //   const infocolor = allcolors?.map((color, id) => {
+  //     const allprops = color.props
+  //     const palete = allprops?.map((prop, id) => {
+  //       const details = prop.palete
+  //       const infodetails = details?.map((detail, id) => {
+  //         return <ColorsBlock key={detail.id} colorround={detail.hex_value} colorname={detail.colour_name} />
+  //       })
+  //     })
+  //   })
   // })
 
-  const newdata = datas?.map((detail, id) => {
+  const newdata = datas.map((data, id) => {
+    const allcolors = data.product_colors
+    const infocolor = allcolors.map((color, id) => { 
+      return <ColorsBlock key={color.id} colorround={color.hex_value} colorname={color.colour_name} />
+    })
 
-    return <ColorsBlock palete={detail.product_colors} />
   })
 
-
   console.log(newdata)
-
-
-
   return [newdata]
 }
 

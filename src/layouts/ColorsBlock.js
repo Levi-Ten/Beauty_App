@@ -3,7 +3,7 @@ import useColor from '../hooks/useColor'
 import { BeautyshopContext } from '../api/ApiContext'
 import cardstyle from "../style/brandCard.module.css"
 
-function ColorsBlock({palete, colorround, colorname}) {
+function ColorsBlock({ key, colorround, colorname}) {
 
   const {datas} = useContext(BeautyshopContext)
   const [newdata] = useColor()
@@ -11,6 +11,7 @@ function ColorsBlock({palete, colorround, colorname}) {
   return (
     <div className={cardstyle.colorspalete}>
       <div className={cardstyle.showpalete}>
+
       <div>{colorround}</div>
       <p>{colorname}</p>
       </div>
