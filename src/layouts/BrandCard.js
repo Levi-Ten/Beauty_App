@@ -4,14 +4,11 @@ import cardstyle from "../style/brandCard.module.css"
 import ratingstyle from "../style/rating.module.css"
 import useRating from '../hooks/useRating'
 import ColorsBlock from './ColorsBlock'
-import useColor from '../hooks/useColor'
 
-
-function BrandCard({ key, image, website, productsite, brand, name, type, rate, price, description }) {
+function BrandCard({ image, website, productsite, brand, name, type, rate, price, description, allcolors }) {
 
   const [showrate] = useRating()
-  const [newdata] = useColor()
- 
+
 
   return (
     <div className={cardstyle.product_info}>

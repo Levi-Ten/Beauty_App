@@ -3,21 +3,16 @@ import { GET_MAKEUPURL } from './ApiUrl'
 import axios from 'axios'
 import { BeautyshopContext } from './ApiContext'
 import useMap from '../hooks/useMap'
-import useColor from '../hooks/useColor'
-
 
 function Api() {
 
-const {datas} = useContext(BeautyshopContext)
+  const { datas } = useContext(BeautyshopContext)
+  const [alldata] = useMap()
 
-const [alldata] = useMap()
-const [newdata] = useColor()
-
-console.log(datas)
+  console.log(datas)
   return (
     <div className="main">
-{alldata}
-{newdata}
+      {alldata}
     </div>
   )
 }
